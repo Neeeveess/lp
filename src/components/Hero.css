@@ -1,0 +1,83 @@
+/* Scroll wrapper defining how long the user scrolls to finish the video */
+.hero-scroll-wrapper {
+  position: relative;
+  height: 400vh; /* Scroll down distance for the video */
+  width: 100%;
+}
+
+/* The actual visible sticky section */
+.hero-sticky {
+  background: linear-gradient(135deg, var(--slate-900) 0%, #0a0f1d 100%);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.hero-video {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35vw;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.85;
+  box-shadow: -10px 20px 40px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-overlay {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding-top: 5rem;
+}
+
+.hero-sticky h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.text-amber {
+  background: linear-gradient(90deg, var(--amber-400), var(--amber-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-sticky p {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      180deg, 
+      rgba(15, 23, 42, 0.7) 0%, 
+      rgba(15, 23, 42, 0.9) 100%
+    );
+  }
+}
