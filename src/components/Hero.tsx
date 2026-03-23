@@ -48,7 +48,7 @@ const Hero = () => {
         <video 
           ref={videoRef}
           className="hero-video"
-          src="/hero_video.mp4"
+          src="./hero_video.mp4"
           muted
           playsInline
           preload="auto"

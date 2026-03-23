@@ -7,7 +7,7 @@ const About = () => {
     <section className="about" id="about">
       <div className="container about-grid">
         <div className="about-image-wrapper fade-in visible">
-          <img src="/about_img.png" alt="About BuildCraft" className="about-img" />
+          <img src="./about_img.png" alt="About BuildCraft" className="about-img" />
           <div className="experience-badge">
             <span className="years">25+</span>
             <span className="text">Years of Excellence</span>

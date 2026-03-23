@@ -2,9 +2,9 @@
 import './Projects.css';
 
 const projects = [
-  { image: '/project1.png', category: 'Commercial', title: 'Apex Tower' },
-  { image: '/project2.png', category: 'Residential', title: 'Serenity Villa' },
-  { image: '/project3.png', category: 'Renovation', title: 'The Foundry Hub' }
+  { image: './project1.png', category: 'Commercial', title: 'Apex Tower' },
+  { image: './project2.png', category: 'Residential', title: 'Serenity Villa' },
+  { image: './project3.png', category: 'Renovation', title: 'The Foundry Hub' }
 ];
 
 const Projects = () => {
